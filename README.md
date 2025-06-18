@@ -1,4 +1,4 @@
-# 📦 shared-api-client
+# 📦 bestprices-api-client
 
 Este paquete contiene servicios reutilizables que se pueden consumir desde otros proyectos como React, React Native, etc.
 
@@ -9,8 +9,8 @@ Este paquete contiene servicios reutilizables que se pueden consumir desde otros
 ### 1. Crear carpeta e inicializar el proyecto
 
 
-mkdir shared-api-client
-cd shared-api-client
+mkdir bestprices-api-client
+cd bestprices-api-client
 npm init -y
 
 
@@ -57,7 +57,7 @@ export * from './src/api';
 #package.json
 
 {
-  "name": "shared-api-client",
+  "name": "bestprices-api-client",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -88,11 +88,11 @@ npm publish --access=public
 9. Instalar el paquete desde otro proyecto
 
 
-npm install shared-api-client
+npm install bestprices-api-client
 
 # así se utiliza
 
-import { getPosts } from 'shared-api-client';
+import { getPosts } from 'bestprices-api-client';
 
 getPosts().then(posts => console.log(posts));
 
@@ -112,7 +112,7 @@ npm publish --access=public
 # recomendación usar  un scope para evitar conflictos
 
 {
-  "name": "@tuequipo/shared-api-client",
+  "name": "@tuequipo/bestprices-api-client",
   "version": "1.0.0"
 }
 
@@ -122,7 +122,7 @@ npm publish --access=public
 ##Ejemplo de package.json:
 
 {
-  "name": "@tuequipo/shared-api-client",
+  "name": "@tuequipo/bestprices-api-client",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
